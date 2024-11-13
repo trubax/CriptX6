@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "693837443791",
+    "project_id": "criptax-8d87d",
+    "storage_bucket": "criptax-8d87d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693837443791:android:82d34c5248229e72e6bdba",
+        "android_client_info": {
+          "package_name": "com.criptx.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu1LwJgGYjKtVrf1bi2p52pc6u-Vr62aE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

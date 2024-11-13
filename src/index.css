@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  --primary: #1F2937;
+  --secondary: #374151;
+  --accent: #3B82F6;
+  --background: #111827;
+  --text: #FFFFFF;
+  --divide: #374151;
+}
+
+/* Classi di utilità per i temi */
+.theme-bg-primary {
+  background-color: var(--primary);
+}
+
+.theme-bg-secondary {
+  background-color: var(--secondary);
+}
+
+.theme-bg-accent {
+  background-color: var(--accent);
+}
+
+.theme-bg {
+  background-color: var(--background);
+}
+
+.theme-text {
+  color: var(--text);
+}
+
+.theme-accent {
+  color: var(--accent);
+}
+
+.theme-divide {
+  border-color: var(--divide);
+}
+
+.theme-border-accent {
+  border-color: var(--accent);
+}
+
+.theme-glow {
+  box-shadow: 0 0 20px var(--accent);
+}
+
+.theme-glow-sm {
+  filter: drop-shadow(0 0 3px var(--accent));
+}
+
+.hover\:theme-bg-secondary:hover {
+  background-color: var(--secondary);
+}
+
+.hover\:theme-bg-accent:hover {
+  background-color: var(--accent);
+}
+
+.hover\:theme-text:hover {
+  color: var(--text);
+}
+
+/* Opacità */
+.opacity-70 {
+  opacity: 0.7;
+}
+
+/* Transizioni */
+.theme-transition {
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar personalizzata */
+.settings-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.settings-container::-webkit-scrollbar {
+  display: none;
+}
+
+.settings-container:hover {
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
+}
+
+.settings-container:hover::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+
+.settings-container:hover::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+}
+
+.settings-container:hover::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 9999px;
+}
+
+.settings-container:hover::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text);
+}
+
+/* Animazioni */
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.2s ease-out forwards;
+}

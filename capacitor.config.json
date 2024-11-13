@@ -1,0 +1,33 @@
+{
+  "appId": "com.criptx.app",
+  "appName": "CriptX",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true,
+    "hostname": "app"
+  },
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": false,
+      "providers": ["google.com", "anonymous"]
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_notification",
+      "iconColor": "#488AFF",
+      "sound": "notification.wav"
+    },
+    "Contacts": {
+      "displayName": "CriptX"
+    }
+  },
+  "ios": {
+    "scheme": "com.criptx.app"
+  },
+  "android": {
+    "scheme": "com.criptx.app"
+  }
+}

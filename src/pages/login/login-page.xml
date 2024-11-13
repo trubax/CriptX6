@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="CriptX" class="action-bar" />
+    <StackLayout class="p-20">
+        <Label text="Benvenuto su CriptX" class="h1 text-center" />
+        <Label text="Messaggistica sicura per tutti" class="h2 text-center" />
+        
+        <Button text="Accedi con Google" tap="{{ onGoogleLogin }}" class="-primary -rounded-lg m-t-20" />
+        <Button text="Accedi come ospite" tap="{{ onAnonymousLogin }}" class="-outline -rounded-lg m-t-10" />
+        
+        <Label text="Le tue conversazioni sono crittografate end-to-end" class="text-center text-muted m-t-20" textWrap="true" />
+    </StackLayout>
+</Page>
